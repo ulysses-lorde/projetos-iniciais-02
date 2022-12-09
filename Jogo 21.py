@@ -28,4 +28,5 @@ print(f'\nO jogador 1 tem {pontos_jogador_1} pontos e o jogador 2 tem {pontos_jo
 ''' Regras:
 O jogador que tiver pontos mais próximo de 21 ou exatamente vence.
 Se o jogador passar de 21 pontos perde automáticamente.
+v2.0
 '''
