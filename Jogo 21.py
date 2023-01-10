@@ -1,5 +1,23 @@
 from random import randint
-pontos_jogador_1 = pontos_jogador_2 = 0
+
+class partida:
+    def __init__(self, jogador):
+        self.jogador = jogador
+
+    def tirarNumero(self, pontos):
+        numeros = randit(1,10)
+        pontos += numeros
+        self.pontos = numeros
+        return self.pontos
+
+    
+    def somaDePontos(self, pontos_jogador):
+        pontos_jogador = self.pontos
+        print(self.pontos, pontos_jogador)
+        
+
+
+'''pontos_jogador_1 = pontos_jogador_2 = 0
 while pontos_jogador_1 < 22 and pontos_jogador_2 < 22:
     if pontos_jogador_1 < 21:
         retirar = str(input('Vez do jogador 1.\nRetirar um número aleatório? [S/N] ')).upper().strip()[0]
@@ -23,7 +41,7 @@ while pontos_jogador_1 < 22 and pontos_jogador_2 < 22:
         print('-=' * 15)
     else:
         print('O jogador 2 não pode mais jogar!')
-print(f'\nO jogador 1 tem {pontos_jogador_1} pontos e o jogador 2 tem {pontos_jogador_2} pontos!')
+print(f'\nO jogador 1 tem {pontos_jogador_1} pontos e o jogador 2 tem {pontos_jogador_2} pontos!')'''
 
 ''' Regras:
 O jogador que tiver pontos mais próximo de 21 ou exatamente vence.
